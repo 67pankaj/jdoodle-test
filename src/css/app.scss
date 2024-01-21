@@ -1,0 +1,41 @@
+// app global css in SCSS form
+
+// rounded-borders classes - taking sizes from flex-gutter (quasar variables)
+@each $size, $value in $flex-gutter {
+  .rounded-borders-#{$size} {
+    border-radius: $value !important;
+  }
+}
+
+.rounded-borders-full {
+  border-radius: 100vw !important;
+}
+
+// font families
+.font {
+  &-header {
+    font-family: $typography-header-font-family;
+  }
+
+  &-content {
+    font-family: $typography-font-family;
+  }
+}
+
+html,
+body {
+  @extend .font-content;
+}
+
+// override icon and spinner size inside button
+.q-btn {
+  .q-icon,
+  .q-spinner {
+    font-size: 1.5em;
+  }
+}
+
+// restrict resize
+.resize-none {
+  resize: none;
+}

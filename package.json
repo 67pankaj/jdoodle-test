@@ -1,0 +1,48 @@
+{
+  "name": "jdoodle-test",
+  "version": "0.0.1",
+  "description": "JDoodle - Cloud Programming",
+  "productName": "JDoodle Test",
+  "author": "Pankaj Mishra <67pankaj@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.cjs,.mjs,.vue,.json,.md ./ --fix --ignore-path .gitignore",
+    "format": "prettier --write \"**/*.{js,cjs,mjs,vue,css,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "@quasar/extras": "^1.16.9",
+    "ace-builds": "^1.32.3",
+    "axios": "^1.6.5",
+    "firebase": "^10.7.1",
+    "lodash": "^4.17.21",
+    "pinia": "^2.1.7",
+    "quasar": "^2.14.2",
+    "validator": "^13.11.0",
+    "vue": "^3.4.13",
+    "vue-router": "^4.2.5",
+    "vue3-ace-editor": "^2.2.4"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.7.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-vue": "^9.20.1",
+    "postcss": "^8.4.33",
+    "prettier": "^3.2.2",
+    "prettier-plugin-css-order": "^2.0.1",
+    "prettier-plugin-organize-attributes": "^1.0.0"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
